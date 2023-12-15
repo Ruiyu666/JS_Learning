@@ -1,0 +1,13 @@
+// Arrow Function in ES6
+
+const calAge3 = birthYear => 2023 - birthYear;
+const age3 = calAge3 (2000);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firsrtName) => {
+  const age = 2023 - birthYear;
+  const retirement = 55- age;
+  return `${firsrtName} has ${retirement} years from retirement!`
+}
+
+console.log(yearsUntilRetirement(1997, 'Ruiyu'));
