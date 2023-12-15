@@ -1,0 +1,27 @@
+'use strict';
+
+function logger () {
+  console.log ('My name is Ruiyu');
+}
+
+logger();
+logger();
+logger();
+
+//Function Code
+function fruitProcessor (apple, orange ){
+const juice = `Juice with ${apple} apples and ${orange} oranges.`
+return juice;
+}
+
+// Recall the function code.
+const appleJuice = fruitProcessor(10,0);
+console.log(appleJuice);
+
+const orangeJuice = fruitProcessor(0, 13);
+console.log(orangeJuice);
+
+ const appleOrangeJuice = fruitProcessor(5,8);
+ console.log(appleOrangeJuice);
+
+ 
