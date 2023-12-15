@@ -1,0 +1,19 @@
+ //Function calling other functions
+ function fruitCutter (fruit) {
+  return fruit * 8;
+ }
+
+function fruitProcessor (apple, orange ){
+  const appleSlices = fruitCutter (apple);
+  const orangeSlices= fruitCutter (orange);
+
+  const juice = `Juice with ${appleSlices} pieces of apple and ${orangeSlices} pieces of orange.`
+  return juice;
+  }
+
+  console.log (fruitProcessor (4,8));
+
+
+o/p: Juice with 32 pieces of apple and 64 pieces of orange. 
+
+:) 
