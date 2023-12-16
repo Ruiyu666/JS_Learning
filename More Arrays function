@@ -1,0 +1,27 @@
+//Add the element
+friends =['Michael', 'Steven', 'Peter'];
+const newlength = friends.push('Jay');//push for adding th element into the array.
+console.log(friends);
+console.log(newlength);
+
+friends.unshift ('John');// unshift is adding the element into the beginning of array
+console.log(friends);
+
+//remove the element
+const popped = friends.pop(); // pop is used for remove the last element
+console.log(popped)
+console.log(friends);
+
+friends.shift();// shift is used for remove the first element
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('John'));
+console.log(friends.includes('Steven'));
+console.log(friends.includes('John'));
+
+if (friends.includes('John')) {
+    console.log('You have a friend named John');
+} else {
+console.log('You and John are not friends');
+}
