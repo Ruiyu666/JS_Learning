@@ -1,0 +1,33 @@
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+let friends =['Michael', 'Steven', 'Peter'];
+console.log (friends);
+
+const year = new Array(1991,2000,2001,1997);
+console.log(friends [0]);
+console.log(friends [1]);
+console.log(friends.length);
+console.log(friends [friends.length-2]);
+
+friends[2]='Lin';
+console.log(friends);
+
+const firstName = 'Ruiyu';
+const Ruiyu = [firstName, 'Lin',2023-1997, friends, `favorite years ${years}`];
+// Arrays (3)???, use VS code run again.
+console.log(Ruiyu);
+
+const calcAge = function (birthYear){
+    return 2023 - birthYear;
+} 
+
+const years = [1997, 1999, 2004, 1343];
+const age1= calcAge (years[0]); 
+const age2= calcAge (years[1]); 
+const age3= calcAge (years[year.length-1]); 
+console.log (age1, age2, age3);
+
+const ages = [calcAge (years[0]),calcAge (years[1]),calcAge (years[year.length-1]) ];
+console.log(ages);
