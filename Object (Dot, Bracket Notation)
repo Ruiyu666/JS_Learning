@@ -1,0 +1,29 @@
+const lin = {
+  firstName :'Ruiyu',
+  lastName : 'Lin',
+  hobby: 'Frisbee',
+  job: 'Software Engineer',
+  friends: ['Mike','Justin','Mancy'],
+  pet: 'Manyi'
+};
+
+console.log(lin);
+
+console.log(lin.hobby);
+console.log(lin['hobby']);
+
+const nameKey = 'Name';
+console.log(lin['first'+ nameKey]);
+console.log(lin['last'+ nameKey]);
+
+const interestIN = prompt ('What do you want to know about Lin? Choose between firstName, lastName, hobby, job, friends and pet');
+
+console.log(lin[interestIN]);
+
+if (lin[interestIN]) {
+   console.log(lin[interestIN]);
+} else {
+  console.log('Wrong request!');
+}
+
+console.log(`${lin.lastName} has ${lin.friends.length} friends, and her best friend is called ${lin.friends[0]}`);
