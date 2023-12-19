@@ -1,0 +1,72 @@
+const Ruiyu = {
+  firstName :'Ruiyu',
+  lastName : 'Lin',
+  hobby: 'Frisbee',
+  job: 'Software Engineer',
+  friends: ['Mike','Justin','Mancy'],
+  pet: 'Manyi',
+  hasDriverslicense: true,
+  birthyear:1997,
+
+  // calcAge:function(birthyear){
+  //   return 2023-birthyear;
+  // }
+  
+  // calcAge:function (){
+  //   // console.log(this);
+  //   return 2023- this.birthyear;
+  // },
+
+
+  calcAge:function (){
+    this.age = 2023- this.birthyear;
+    return this.age;
+  },
+  getSummary: function() {
+    return `${this.lastName} is a ${this.age} years old ${this.job} and she has ${this.hasDriverslicense? 'a':'no'} driver license :)`},
+  }; 
+
+// console.log(lin.calcAge());
+
+// console.log(lin.age);
+// console.log(lin.age);
+// console.log(lin.age);
+
+console.log(Ruiyu.getSummary());
+
+// exercise
+/* Write your code below. Good luck! 🙂 */
+
+const mark ={
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass/(this.height*this.height)
+        return this.bmi;
+    }
+};
+
+const john ={
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+     calcBMI: function () {
+         this.bmi = this.mass/(this.height*this.height)
+        return this.bmi;
+    }
+}
+
+mark.calcBMI();
+john.calcBMI();
+
+console.log(mark.calcBMI());
+console.log(john.calcBMI());
+
+if (mark.calcBMI > john.calcBMI){
+console.log(`${mark.fullName}'s BMI ${mark.calcBMI()} is higher than ${john.fullName}'s BMI ${john.calcBMI()}`);
+} else {
+    console (`${john.fullName}'s BMI ${john.calcBMI()} is higher than ${mark.fullName}'s BMI ${mark.calcBMI()}`);
+}
+
+
